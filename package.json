@@ -1,6 +1,6 @@
 {
   "name": "wdio-novus-mutatio-visual-regression-service",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Novus modified Visual regression testing for WebdriverIO",
   "main": "index.js",
   "files": [
