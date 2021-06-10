@@ -24,8 +24,8 @@ async function normalizeRetinaScreenshot(browser, screenDimensions, base64Screen
 
 async function normalizeIOSScreenshot(browser, screenDimensions, base64Screenshot) {
 
-  const { capabilities:{deviceName}, requestedCapabilities:{crop}} = browser;
-  const { toolbar, addressbar } = crop === undefined ? 44 : crop;
+const { capabilities:{deviceName}, capabilities} = browser;
+  const { toolbar, addressbar } = capabilities['crop:custom'] === undefined ? 44 : capabilities['crop:custom'];
   // Detect if its iphone or ipad.
   const isIphone = deviceName.includes('iPad') ? false : true;
   const toolbarHeight = toolbar === undefined ? 44 : toolbar;
