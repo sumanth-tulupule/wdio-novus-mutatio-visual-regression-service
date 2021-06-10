@@ -9,7 +9,7 @@ Based on the work of Juan on [Novus Visual Regression Service](https://github.co
 Although Novus Visual Regression Service works fine for most cases, it doesnt play well with browserstack on IOS devices with notch. This is an attempt to fix that. Multiple orientations passed from config are not tested.
 
 Pass
-       ```crop: {
+       ```'crop:custom': {
         toolbar: <x>,
         addressBar: <y>,
       }```
